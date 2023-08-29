@@ -30,12 +30,6 @@ nav ul li:hover {
 	background-color: aqua;
 }
 
-@media only screen and (max-width: 600px){
-	h1 {
-		display: none;
-	}
-}
-
 /* Section about me */
 
 #about-me-content {
@@ -49,6 +43,7 @@ nav ul li:hover {
 	width: 15em;
 	border-radius: 35%;
 	padding: 0 2em;
+	max-height:22em;
 }
 
 #button-containter {
@@ -119,4 +114,20 @@ i {
 
 #card div ul li {
 	padding: 0.5em;
+}
+
+/* For mobiles */
+
+@media only screen and (max-width: 600px){
+	h1 {
+		display: none;
+	}
+	nav ul li {
+		margin-left: 1em;
+		padding: 0.3em 0.4em;
+	}
+	#about-me-content {
+		text-align: left;
+	}
+
 }
