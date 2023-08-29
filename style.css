@@ -1,0 +1,122 @@
+a {
+	text-decoration: none;
+}
+
+h2 {
+	border-bottom: 1px black dotted;
+	display: inline-block;
+	padding: 0.3em 1em;
+}
+
+/* Navbar */
+header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	background-color: aliceblue;
+	position: relative;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin-left: 1.5em;
+	padding: 0.3em 0.5em;
+}
+
+nav ul li:hover {
+	background-color: aqua;
+}
+
+@media only screen and (max-width: 600px){
+	h1 {
+		display: none;
+	}
+}
+
+/* Section about me */
+
+#about-me-content {
+	display: flex;
+	padding: 1.5em;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#me_picture {
+	width: 15em;
+	border-radius: 35%;
+	padding: 0 2em;
+}
+
+#button-containter {
+	display: flex;
+	justify-content: center;
+}
+
+#lottery {
+	padding: 0.4em 1em;
+	border-radius: 20%;
+	background-color: rgb(97, 237, 87);
+}
+
+#lottery:hover {
+	cursor: pointer;
+}
+
+#sentence {
+	font-family: 'Philosopher', sans-serif;
+	text-align: justify;
+	text-justify:inter-word;
+}
+
+/* Section projects */
+#youtube_banner {
+	width: 35em;
+}
+
+#first_web_site {
+	width: 35em;
+}
+
+summary {
+	padding: 0.5em;
+}
+
+.summary-description {
+	margin-top: 1em;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/* Section skills */
+i {
+	font-size: 3em;
+}
+
+#skills ul {
+	display: flex;
+	list-style: none;
+	justify-content:space-around;
+}
+
+/* Contact page */
+#card {
+	display: flex;
+	border: 2px black solid;
+}
+
+#me_and_skull {
+	width: 15em;
+}
+
+#card div ul {
+	padding: 1em;
+	margin-left: 1em;
+}
+
+#card div ul li {
+	padding: 0.5em;
+}

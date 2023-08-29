@@ -7,9 +7,19 @@
     <title>Marcin Domagała - portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Navbar -->
     <header>
         <h1>Marcin Domagała</h1>
         <nav>
@@ -17,42 +27,85 @@
                 <li><a href="#about-me">O mnie</a></li>
                 <li><a href="#projects">Projekty</a></li>
                 <li><a href="#skills">Umiejętności</a></li>
+                <li><a href="#hobbies">Hobby</a></li>
+                <li><a href="/contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- about-me -->
     <section id="about-me">
         <h2>O mnie</h2>
         <div id="about-me-content">
-            <p>Jestem doktorantem filozofii, w ramach której najmocniej interesuje mnie
-                filozofia stoicka i historia wczesnego chrześcijaństwa. Swoje studia i hobby zarazem
-                staram się łączyć z nauką programowania, a to, czego się nauczę,
-                próbuję wykorzystywać tworząc na internecie ciekawe i przydatne materiały
-                dla zainteresowanych.
-            </p>
+            <div id="about-me-data">
+                <p>Nazywam się Marcin Domagała i jestem doktorantem filozofii, w ramach której najmocniej interesuje mnie
+                    filozofia stoicka i historia wczesnego chrześcijaństwa. Swoje studia i hobby zarazem
+                    staram się łączyć z nauką programowania, a to, czego się nauczę,
+                    próbuję wykorzystywać tworząc na internecie ciekawe i przydatne materiały
+                    dla zainteresowanych.
+                </p> <br>
+                <p> A teraz kliknij przycisk wylosuj, żeby zobaczy swoją złotą myśl na dziś. Jeżeli wylosujesz kolejną,
+                    wszystko straci znaczenie.</p><br>
+                <div id="button-containter">
+                    <button id="lottery">Wylosuj</button>
+                </div><br>
+            </div>
             <img src="Assets/Ja.jpg" alt="Me wearing sunglasses" id="me_picture">
         </div>
-    </section>
-    <section id="projects">
-        <h2>Projekty</h2>
-        <ul>
-            <li>Kanał na YouTube</li>
-            <li>Strona internetowa</li>
-        </ul>
+        <p id="sentence"></p>
     </section>
 
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projekty</h2>
+
+        <details>
+            <summary>Kanał na YouTube</summary>
+            <figure>
+                <img src="Assets/my_youtube_channel.jpg" alt="YouTube channel banner" id="youtube_banner"><br>
+                <figcaption class="summary-description">Na kanale YouTube publikuję różne filmiki, specyficznie
+                    zmontowane lub zanimowane, w których streszczam
+                    dzieła filozoficzne. Wykorzystywanymi technologiami są: Open Toonz oraz DaVinci Resolve.
+                </figcaption>
+            </figure>
+        </details>
+
+        <details>
+            <summary>Strona internetowa</summary>
+            <figure>
+                <img src="Assets/my_website.jpg" alt="Main page of my first website" id="first_web_site"><br>
+                <figcaption class="summary-description">Strona internetowa poświęcona filozofii, gdzie znajdują się
+                    opracowania dzieł filozoficznych, cytaty, które
+                    do mnie trafiły, a także artykuły obszerniej podejmujące dane zagadnienie. Wykorzystanymi
+                    technologiami są:
+                    HTML, CSS oraz JS.</figcaption>
+            </figure>
+        </details>
+
+    </section>
+
+    <!-- Skills -->
     <section id="skills">
         <h2>Umiejętności</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>Git</li>
+            <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+            <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+            <li><i class="devicon-javascript-plain colored"></i></li>
+            <li><i class="devicon-git-plain-wordmark colored"></i></li>
+            <li><i class="devicon-github-original-wordmark colored"></i></li>
         </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobby</h2>
         <ul>
+            <li>Bieganie</li>
+            <li>Filozofia</li>
             <li>Żonglerka</li>
         </ul>
     </section>
+
+
 
 </body>
 
