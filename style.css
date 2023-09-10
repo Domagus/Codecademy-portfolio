@@ -1,5 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
 a {
 	text-decoration: none;
+}
+
+h1 {
+	margin-left: 0.5em;
 }
 
 h2 {
@@ -14,7 +22,6 @@ header {
 	justify-content: space-between;
 	border-bottom: 2px solid black;
 	background-color: aliceblue;
-	position: relative;
 }
 
 nav ul {
@@ -40,10 +47,10 @@ nav ul li:hover {
 }
 
 #me_picture {
-	width: 15em;
+	width: 16em;
 	border-radius: 35%;
 	padding: 0 2em;
-	max-height:22em;
+	max-height: 18em;
 }
 
 #button-containter {
@@ -52,7 +59,7 @@ nav ul li:hover {
 }
 
 #lottery {
-	padding: 0.4em 1em;
+	padding: 0.4em 0.7em;
 	border-radius: 20%;
 	background-color: rgb(97, 237, 87);
 }
@@ -62,9 +69,12 @@ nav ul li:hover {
 }
 
 #sentence {
-	font-family: 'Philosopher', sans-serif;
+	font-family: "Philosopher", sans-serif;
 	text-align: justify;
-	text-justify:inter-word;
+	text-justify: inter-word;
+	padding: 2em 1em;
+	background-color: aliceblue;
+	text-align: center;
 }
 
 /* Section projects */
@@ -94,7 +104,25 @@ i {
 #skills ul {
 	display: flex;
 	list-style: none;
-	justify-content:space-around;
+	justify-content: space-around;
+}
+
+/* Section hobbies */
+
+.hobby-picture {
+	width: 200px;
+	border-radius: 30%;
+}
+
+.hobby {
+	display: flex;
+	padding: 1em 2em;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.hobby img {
+	margin-right: 1em;
 }
 
 /* Contact page */
@@ -116,9 +144,18 @@ i {
 	padding: 0.5em;
 }
 
+#up-page {
+	position: fixed;
+	bottom: 0px;
+	left: 80%;
+	background-color: aliceblue;
+	border: 2px solid;
+	padding: 0.5em 1em;
+}
+
 /* For mobiles */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 	h1 {
 		display: none;
 	}
@@ -129,5 +166,4 @@ i {
 	#about-me-content {
 		text-align: left;
 	}
-
 }

@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Navbar -->
     <header>
-        <h1>Marcin Domagała</h1>
+        <h1 id="name">Marcin Domagała</h1>
         <nav>
             <ul>
                 <li><a href="#about-me">O mnie</a></li>
@@ -38,14 +38,14 @@
         <h2>O mnie</h2>
         <div id="about-me-content">
             <div id="about-me-data">
-                <p>Nazywam się Marcin Domagała i jestem doktorantem filozofii, w ramach której najmocniej interesuje mnie
+                <p>Nazywam się Marcin Domagała i jestem doktorantem filozofii, w ramach której najmocniej interesuje
+                    mnie
                     filozofia stoicka i historia wczesnego chrześcijaństwa. Swoje studia i hobby zarazem
                     staram się łączyć z nauką programowania, a to, czego się nauczę,
                     próbuję wykorzystywać tworząc na internecie ciekawe i przydatne materiały
                     dla zainteresowanych.
                 </p> <br>
-                <p> A teraz kliknij przycisk wylosuj, żeby zobaczy swoją złotą myśl na dziś. Jeżeli wylosujesz kolejną,
-                    wszystko straci znaczenie.</p><br>
+                <p> A teraz kliknij przycisk wylosuj, żeby zobaczy swoją złotą myśl na dziś.</p><br>
                 <div id="button-containter">
                     <button id="lottery">Wylosuj</button>
                 </div><br>
@@ -54,6 +54,8 @@
         </div>
         <p id="sentence"></p>
     </section>
+    <p id="up-page"><a href="#name">Do góry</a></p>
+
 
     <!-- Projects -->
     <section id="projects">
@@ -65,7 +67,7 @@
                 <img src="Assets/my_youtube_channel.jpg" alt="YouTube channel banner" id="youtube_banner"><br>
                 <figcaption class="summary-description">Na kanale YouTube publikuję różne filmiki, specyficznie
                     zmontowane lub zanimowane, w których streszczam
-                    dzieła filozoficzne. Wykorzystywanymi technologiami są: Open Toonz oraz DaVinci Resolve.
+                    dzieła filozoficzne. Wykorzystywanymi narzędziami są: Open Toonz oraz DaVinci Resolve.
                 </figcaption>
             </figure>
         </details>
@@ -78,7 +80,7 @@
                     opracowania dzieł filozoficznych, cytaty, które
                     do mnie trafiły, a także artykuły obszerniej podejmujące dane zagadnienie. Wykorzystanymi
                     technologiami są:
-                    HTML, CSS oraz JS.</figcaption>
+                    HTML oraz CSS. Adres: https://domagus.github.io/Philosophy/</figcaption>
             </figure>
         </details>
 
@@ -96,16 +98,33 @@
         </ul>
     </section>
 
+    <!-- hobbies -->
+
     <section id="hobbies">
         <h2>Hobby</h2>
-        <ul>
-            <li>Bieganie</li>
-            <li>Filozofia</li>
-            <li>Żonglerka</li>
-        </ul>
+        <div id="hobby-wrapper">
+            <div class="hobby">
+                <img src="Assets/marathon_trophy.jpg" alt="Trophies earned during marathon races" class="hobby-picture">
+                <p> Jednym z moich zamiłowań jest bieganie, czego owocem jest ponad dziesięć
+                    przebiegniętych maratonów oraz zdobycie korony maratonów polskich. Jednak nie biegam dla trofeów, są
+                    one tylko przyjemnym dodatkiem do ogromnej radości, którą czerpię z samego biegania!</p>
+            </div>
+            <div class="hobby">
+                <img src="Assets/philosophy_trophy.jpg"
+                    alt="Statuette for the third place in the contest for best magistrate paper in the University of Wrocław"
+                    class="hobby-picture">
+
+                <p> Moją wieloletną pasją jest filozofia. Lubię zarówno
+                    czytać filozoficzne teksty, jak i pisać na ich temat artykuły naukowe. Jednak największą przyjemność
+                    sprawia mi prowadzenie zajęć dla studentów i dyskusja na filozoficzne tematy.
+                </p>
+            </div>
+
+            <div class="hobby">
+                Żonglerka
+            </div>
+        </div>
     </section>
-
-
 
 </body>
 
